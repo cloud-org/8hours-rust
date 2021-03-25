@@ -1,0 +1,11 @@
+repos:
+  - repo: https://github.com/thlorenz/doctoc
+    rev: v1.4.0
+    hooks:
+      - id: doctoc
+        exclude: ^vendor/
+  - repo: https://github.com/doublify/pre-commit-rust
+    rev: master
+    hooks:
+      - id: fmt
+      - id: cargo-check
